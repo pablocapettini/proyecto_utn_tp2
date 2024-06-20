@@ -12,7 +12,7 @@ fetch(url)
       let statusText = character.alive === true ? "Vive" : "Murió";
       let imagenURL = character.image ? character.image : defaultImage;
 
-      $gridCharacters.innerHTML += `<div class="card-characters">
+      $gridCharacters.innerHTML += `<div>
     <img src="${imagenURL}" alt="Foto de ${character.name}">
     <h2 class="title-card-character">${character.name}</h2>
     <p class="species-card-character">Especie: ${character.species}</p>

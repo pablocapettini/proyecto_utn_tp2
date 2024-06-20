@@ -43,16 +43,16 @@ main {
 }
 
 section {
-  display: grid; /* Habilita CSS Grid */
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Ajusta las columnas */
-  gap: 20px; /* Espacio entre tarjetas */
-  width: 70%; /* Ancho del contenedor */
-  margin: auto; /* Centra el contenedor horizontalmente */
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  width: 70%;
+  margin: auto;
 }
 
 section div {
   background-color: rgba(255, 217, 0, 0.808);
-  border: solid  4px #a70606;
+  border: solid 4px #a70606;
   border-radius: 20px;
   padding: 20px;
   text-align: center;
@@ -95,6 +95,3 @@ footer {
   width: 100%;
   bottom: 0;
 }
-
-
-
