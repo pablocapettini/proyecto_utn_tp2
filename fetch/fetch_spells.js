@@ -1,5 +1,8 @@
 const url = "https://harry-potter-api.onrender.com/hechizos";
 const $gridSpells = document.getElementById("section-spells");
+document.querySelector(".btn-flotante").addEventListener("click", function() {
+  window.scrollTo({ top: 0, behavior: "smooth" }); // Scroll to top smoothly
+});
 
 fetch(url)
   .then((res) => res.json())

@@ -1,6 +1,9 @@
 const url = "https://hp-api.onrender.com/api/characters";
 const $gridCharacters = document.getElementById("section-characters");
 const defaultImage = "/assets/image-default/lente_cicatriz.png";
+document.querySelector(".btn-flotante").addEventListener("click", function() {
+  window.scrollTo({ top: 0, behavior: "smooth" }); // Scroll to top smoothly
+});
 
 fetch(url)
   .then((res) => res.json())

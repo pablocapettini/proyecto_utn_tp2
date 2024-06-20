@@ -128,6 +128,30 @@ h2 {
   margin-top: 40px;
 }
 
+.btn-flotante {
+  position: fixed; /* Position the button fixed to the viewport */
+  bottom: 45px; /* Distance from the bottom */
+  right: 30px; /* Distance from the right */
+  z-index: 100; /* Ensure it's on top of other elements */
+  width: 80px; /* Button width */
+  height: 80px; /* Button height */
+  border-radius: 50%; /* Circular shape */
+  background-color: gold; /* Background color */
+  color: #a70606; /* Text color */
+  cursor: pointer; /* Indicate it's a button */
+  display: flex; /* Center the content */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  transition: background-color 0.3s ease; /* Hover effect */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add a subtle shadow */
+}
+
+.btn-flotante:hover {
+  /* Hover effect */
+  background-color: #a70606;
+  color: gold;
+}
+
 footer p {
   color: gold;
   font-size: 1em;
