@@ -1,14 +1,18 @@
 body {
-  font-family: UnifrakturCook, "Times New Roman", Times, serif;
+  background-image: url(../assets/background_image/harry_elementos.png);
+  background-repeat: repeat;
+  font-family: MedievalSharp, "Times New Roman", Times, serif;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 header {
-  background-color: #343a40;
-  color: white;
-  padding: 1em 0;
+  background-image: linear-gradient(to right, #a70606, #e00909, #a70606);
+  padding: 10px;
+  position: fixed; /* Fijar la navegación del encabezado en la parte superior */
+  top: 0; /* Posicionarlo desde la parte superior de la ventana */
+  width: 100%; /* Que abarque todo el ancho */
+  z-index: 10; /* Establecer un z-index más alto para que se mantenga en la parte superior */
 }
 
 nav ul {
@@ -19,30 +23,110 @@ nav ul {
 }
 
 nav ul li {
-  margin: 0 1em;
+  font-family: MedievalSharp, "Times New Roman", Times, serif;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 0 2em;
+  transition: transform 0.3s ease-in-out;
+}
+
+nav ul li:hover {
+  transform: scale(1.1);
 }
 
 nav ul li a {
-  color: white;
+  text-shadow: 2px 2px 5px rgb(31, 27, 4);
+  color: gold;
   text-decoration: none;
 }
 
 main {
-  padding: 2em;
+  padding: 1px;
   text-align: center;
+  margin-bottom: 170px;
+  margin-top: 100px;
 }
 
 .intro {
-  max-width: 800px;
+  background-color: rgba(255, 217, 0, 0.753);
+  padding: 5px 0px;
+  border: solid 4px #a70606;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease-in-out;
+  width: 90%;
   margin: 0 auto;
+  
+}
+
+p{
+  font-family: Libre Baskerville, Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.2em;
+  text-align: center;
+  text-shadow: 2px 2px 5px rgb(31, 27, 4);
+  color: #a70606;
+  
+   
+}
+
+h1 {
+  font-family: MedievalSharp, "Times New Roman", Times, serif;
+  font-size: 3em;
+  text-align: center;
+  text-shadow: 2px 2px 5px rgb(31, 27, 4);
 }
 
 footer {
-  background-color: #343a40;
-  color: white;
+  background-image: linear-gradient(to right, #a70606, #e00909, #a70606);
+  color: gold;
   text-align: center;
-  padding: 1em 0;
   position: fixed;
   width: 100%;
   bottom: 0;
+}
+
+.history {
+  background-color: rgba(255, 217, 0, 0.753);
+  padding: 5px 0px;
+  border: solid 4px #a70606;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease-in-out;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.history p {
+  padding: 10px;
+}
+
+.history .h2ymedio {
+  font-family: MedievalSharp, "Times New Roman", Times, serif;
+  font-size: 2.5em;
+  text-align: center;
+  text-shadow: 2px 2px 5px rgb(31, 27, 4);
+  border: solid 4px #a70606;
+  border-radius: 20px;
+  padding: 10px;
+  background-color: #a70606;
+  color: gold; ;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  width: 70%;
+  margin: 20px auto;
+}
+
+h2 {
+  font-family: MedievalSharp, "Times New Roman", Times, serif;
+  font-size: 1.7em;
+  text-align: center;
+  text-shadow: 2px 2px 5px rgb(31, 27, 4);
+  margin-top: 40px;
+}
+
+
+footer p {
+  color: gold;
+  font-size: 1em;
+  text-shadow: 2px 2px 5px rgb(31, 27, 4);
 }
