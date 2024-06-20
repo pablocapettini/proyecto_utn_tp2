@@ -1,3 +1,4 @@
+/* Estilos generales */
 body {
   background-image: url(../assets/background_image/harry_elementos.png);
   background-repeat: repeat;
@@ -6,6 +7,7 @@ body {
   padding: 0;
 }
 
+/* Estilos del encabezado */
 header {
   background-image: linear-gradient(to right, #a70606, #e00909, #a70606);
   padding: 10px;
@@ -15,6 +17,7 @@ header {
   z-index: 10; /* Establecer un z-index más alto para que se mantenga en la parte superior */
 }
 
+/* Estilos de la lista de navegación */
 nav ul {
   list-style: none;
   display: flex;
@@ -22,6 +25,7 @@ nav ul {
   padding: 0;
 }
 
+/* Estilos de los elementos de la lista */
 nav ul li {
   font-family: MedievalSharp, "Times New Roman", Times, serif;
   font-size: 1.5em;
@@ -30,16 +34,19 @@ nav ul li {
   transition: transform 0.3s ease-in-out;
 }
 
+/* Efecto al pasar el mouse sobre los elementos de la lista */
 nav ul li:hover {
   transform: scale(1.1);
 }
 
+/* Estilos de los enlaces de la lista */
 nav ul li a {
   text-shadow: 2px 2px 5px rgb(31, 27, 4);
   color: gold;
   text-decoration: none;
 }
 
+/* Estilos del contenido principal */
 main {
   padding: 1px;
   text-align: center;
@@ -47,6 +54,7 @@ main {
   margin-top: 100px;
 }
 
+/* Estilos de la introducción */
 .intro {
   background-color: rgba(255, 217, 0, 0.753);
   padding: 5px 0px;
@@ -58,12 +66,14 @@ main {
   margin: 0 auto;
 }
 
+/*Estilos de la imagen*/
 .hp {
-  display: block;
-  margin: 0 auto;
-  margin-bottom: -30px;
+  display: block; /* Establecer el elemento como un bloque */
+  margin: 0 auto; /* Centrar horizontalmente */
+  margin-bottom: -30px; /* Ajustar la altura de la imagen */
 }
 
+/* Estilos del parrafo */
 p {
   font-family: Libre Baskerville, Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1.2em;
@@ -89,6 +99,7 @@ footer {
   bottom: 0;
 }
 
+/* Estilos de la historia */
 .history {
   background-color: rgba(255, 217, 0, 0.753);
   padding: 5px 0px;
@@ -129,25 +140,26 @@ h2 {
 }
 
 .btn-flotante {
-  position: fixed; /* Position the button fixed to the viewport */
-  bottom: 45px; /* Distance from the bottom */
-  right: 30px; /* Distance from the right */
-  z-index: 100; /* Ensure it's on top of other elements */
-  width: 80px; /* Button width */
-  height: 80px; /* Button height */
-  border-radius: 50%; /* Circular shape */
-  background-color: gold; /* Background color */
-  color: #a70606; /* Text color */
-  cursor: pointer; /* Indicate it's a button */
-  display: flex; /* Center the content */
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
-  transition: background-color 0.3s ease; /* Hover effect */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add a subtle shadow */
+  position: fixed; /* Fijar el botón flotante en la parte inferior derecha */
+  bottom: 45px;
+  right: 30px;
+  z-index: 100;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: gold;
+  color: #a70606;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
 }
 
+/* Efecto al pasar el mouse sobre el botón flotante */
 .btn-flotante:hover {
-  /* Hover effect */
   background-color: #a70606;
   color: gold;
 }
@@ -158,6 +170,7 @@ footer p {
   text-shadow: 2px 2px 5px rgb(31, 27, 4);
 }
 
+/* Media queries para ajustar los estilos de la página para pantallas más pequeñas  como se hizo en styles.spells.css*/
 @media (max-width: 1024px) {
   h1 {
     font-size: 2.5em;

@@ -70,6 +70,7 @@ section div:hover {
   transform: scale(1.05);
 }
 
+/* Estilos de la imagen de la sección */
 section div img {
   width: 100%;
   height: 250px;
@@ -104,27 +105,25 @@ p {
   text-shadow: 2px 2px 5px rgb(31, 27, 4);
 }
 
-
 .btn-flotante {
-  position: fixed; /* Position the button fixed to the viewport */
-  bottom: 45px; /* Distance from the bottom */
-  right: 30px; /* Distance from the right */
-  z-index: 100; /* Ensure it's on top of other elements */
-  width: 80px; /* Button width */
-  height: 80px; /* Button height */
-  border-radius: 50%; /* Circular shape */
-  background-color: gold; /* Background color */
-  color: #a70606; /* Text color */
-  cursor: pointer; /* Indicate it's a button */
-  display: flex; /* Center the content */
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
-  transition: background-color 0.3s ease; /* Hover effect */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add a subtle shadow */
+  position: fixed; /* Fijar el botón flotante en la parte inferior derecha */
+  bottom: 45px;
+  right: 30px;
+  z-index: 100;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: gold;
+  color: #a70606;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .btn-flotante:hover {
-  /* Hover effect */
   background-color: #a70606;
   color: gold;
 }
@@ -139,7 +138,7 @@ footer {
 }
 
 @media (max-width: 1024px) {
-  /* Ajustar para pantallas más grandes (tabletas) */
+  /* Ajustar para pantallas más grandes (tablets) */
   section {
     grid-template-columns: repeat(
       2,

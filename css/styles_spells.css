@@ -1,3 +1,4 @@
+/* Estilos generales del body */
 body {
   background-image: url(../assets/background_image/harry_elementos.png);
   background-repeat: repeat;
@@ -6,6 +7,7 @@ body {
   padding: 0;
 }
 
+/* Estilos del encabezado */
 header {
   background-image: linear-gradient(to right, #a70606, #e00909, #a70606);
   padding: 10px;
@@ -15,6 +17,7 @@ header {
   z-index: 10; /* Establecer un z-index más alto para que se mantenga en la parte superior */
 }
 
+/* Estilos de la lista de navegación */
 nav ul {
   list-style: none;
   display: flex;
@@ -22,24 +25,28 @@ nav ul {
   padding: 0;
 }
 
+/* Estilos de los elementos de la lista */
 nav ul li {
   font-family: MedievalSharp, "Times New Roman", Times, serif;
   font-size: 1.5em;
   font-weight: bold;
   margin: 0 2em;
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out; /* Suavizar el efecto de transición al pasar el mouse */
 }
 
+/* Efecto al pasar el mouse sobre un elemento de la lista */
 nav ul li:hover {
-  transform: scale(1.1);
+  transform: scale(1.1); /* Aumentar ligeramente el tamaño */
 }
 
+/* Estilos de los enlaces de la lista */
 nav ul li a {
   text-shadow: 2px 2px 5px rgb(31, 27, 4);
   color: gold;
   text-decoration: none;
 }
 
+/* Estilos del contenido principal */
 main {
   padding: 1px;
   text-align: center;
@@ -47,14 +54,16 @@ main {
   margin-top: 50px;
 }
 
+/* Estilos de la sección de hechizos */
 section {
-  display: grid;
-  gap: 20px;
-  grid-template-columns: repeat(3, 1fr);
-  width: 70%;
-  margin: auto;
+  display: grid; /* Mostrar elementos en filas y columnas */
+  gap: 20px; /* Espacio entre columnas y filas */
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+  width: 70%; /* Ancho de la sección */
+  margin: auto; /* Centrar la sección en la pantall */
 }
 
+/* Estilos de los elementos de la sección */
 section div {
   background-color: rgba(255, 217, 0, 0.808);
   border: solid 4px #a70606;
@@ -63,13 +72,15 @@ section div {
   text-align: center;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   transition: transform 0.3s ease-in-out;
-  max-height: 300px;
+  max-height: 300px; /* Ajustar la altura máxima de los elementos */
 }
 
+/* Efecto al pasar el mouse sobre un elemento de la sección */
 section div:hover {
-  transform: scale(1.05);
+  transform: scale(1.05); /* Aumentar ligeramente el tamaño */
 }
 
+/*Estilos del titulo principal de la seccion de hechizos*/
 h1 {
   font-family: MedievalSharp, "Times New Roman", Times, serif;
   font-size: 5em;
@@ -84,6 +95,7 @@ h2 {
   text-shadow: 2px 2px 5px rgb(31, 27, 4);
 }
 
+/* Estilos del parrafo de la seccion de hechizos */
 p {
   font-family: Libre Baskerville, "Times New Roman", Times, serif;
   font-size: 1em;
@@ -91,30 +103,32 @@ p {
   text-shadow: 2px 2px 5px rgb(31, 27, 4);
 }
 
+/* Estilos del botón flotante */
 .btn-flotante {
-  position: fixed; /* Position the button fixed to the viewport */
-  bottom: 45px; /* Distance from the bottom */
-  right: 30px; /* Distance from the right */
-  z-index: 100; /* Ensure it's on top of other elements */
-  width: 80px; /* Button width */
-  height: 80px; /* Button height */
-  border-radius: 50%; /* Circular shape */
-  background-color: gold; /* Background color */
-  color: #a70606; /* Text color */
-  cursor: pointer; /* Indicate it's a button */
-  display: flex; /* Center the content */
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
-  transition: background-color 0.3s ease; /* Hover effect */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add a subtle shadow */
+  position: fixed; /* Fijar el botón flotante en la parte inferior derecha */
+  bottom: 45px;
+  right: 30px;
+  z-index: 100;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: gold;
+  color: #a70606;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
+/* Efecto al pasar el mouse sobre el botón flotante */
 .btn-flotante:hover {
-  /* Hover effect */
   background-color: #a70606;
   color: gold;
 }
 
+/* Estilos del pie de página */
 footer {
   background-image: linear-gradient(to right, #a70606, #e00909, #a70606);
   color: gold;
@@ -124,8 +138,8 @@ footer {
   bottom: 0;
 }
 
+/* Ajustar para pantallas más grandes (tablets) */
 @media (max-width: 1024px) {
-  /* Ajustar para pantallas más grandes (tabletas) */
   section {
     grid-template-columns: repeat(
       2,

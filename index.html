@@ -4,21 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Inicio - Proyecto Harry Potter</title>
+    <!-- se agrega un icono-->
     <link rel="icon" href="/assets/icons/hp.png" type="image/x-icon" />
+    <!-- se linkea con el archivo styles_index.css-->
     <link rel="stylesheet" href="css/styles_index.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap"
-      rel="stylesheet"
-    />
-
+    <!-- se importan dos fuentes desde google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -34,6 +24,7 @@
   </head>
   <body>
     <header>
+      <!--Barra de navegación-->
       <nav>
         <ul>
           <li><a href="index.html">Inicio</a></li>
@@ -45,7 +36,14 @@
 
     <main>
       <section class="intro">
-        <img class="hp" width="200px" height="200px" src="assets/icons/hp.png" alt="Imagen de Harry Potter" />
+        <!-- Se agrega una imagen-->
+        <img
+          class="hp"
+          width="200px"
+          height="200px"
+          src="assets/icons/hp.png"
+          alt="Imagen de Harry Potter"
+        />
         <h1>
           Sumergite en un portal donde<br />
           la magia y la aventura te esperan
@@ -119,12 +117,23 @@
           puede dar lugar a un mundo extraordinario.
         </p>
       </section>
+      <!--Se insertan saltos de linea-->
       <br />
       <br />
       <br />
+      <!-- Se inserta un boton flotante importado desde bootstrap-->
       <div class="btn-flotante">
-        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-arrow-up-square-fill" viewBox="0 0 16 16">
-          <path d="M2 16a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2zm6.5-4.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 1 0"/>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="35"
+          height="35"
+          fill="currentColor"
+          class="bi bi-arrow-up-square-fill"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M2 16a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2zm6.5-4.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 1 0"
+          />
         </svg>
       </div>
     </main>
@@ -132,7 +141,7 @@
     <footer>
       <p>&copy; 2024 Proyecto Harry Potter. Todos los derechos reservados.</p>
     </footer>
-
+<!--Se inserta el script-->
     <script src="/fetch/app.js"></script>
   </body>
 </html>
