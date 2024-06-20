@@ -8,9 +8,8 @@ fetch(url)
     console.log(spells);
 
     spells.forEach((spell) => {
-      $gridSpells.innerHTML += `<div class="card-spells">
+      $gridSpells.innerHTML += `<div>
     <h2 class="title-card-spell">${spell.hechizo}</h2>
-    <p class="numero-card-hechizo">#${spell.id}</p>
     <p class="content-card-spell">${spell.uso}</p>
     </div>
     `;
